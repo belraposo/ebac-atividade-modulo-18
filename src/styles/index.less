@@ -1,0 +1,79 @@
+@textFont: Roboto, sans-serif;
+@titleFont: Lobster, cursive;
+@colorWhite: rgb(255, 255, 255);
+@colorBlack: rgb(43, 39, 48);
+@colorPurple: rgb(128, 98, 214);
+@colorDarkPurple: rgb(50, 38, 83);
+@colorLightPurple: rgb(146, 136, 248);
+
+body {
+    background-color: @colorPurple;
+    font-family: @textFont;
+}
+
+h1 {
+    margin-top: 75px;
+    color: @colorWhite;
+    font-family: @titleFont;
+    font-size: 3em;
+}
+
+main {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+}
+
+button {
+    margin-top: 50px;
+    padding: 18px;
+    font-family: @textFont;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: @colorWhite;
+    background-color: @colorDarkPurple;
+    border-radius: 50px;
+    border: 4px solid @colorDarkPurple;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+
+    &:hover {
+        background-color: @colorWhite;
+        color: @colorDarkPurple;
+    }
+}
+
+input {
+    max-width: 175px;
+    margin: 75px auto 0;
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: @colorWhite;
+    background-color: transparent;
+    border: none;
+    border-bottom: 8px solid @colorWhite;
+    outline: none;  
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+.result {
+    margin-top: 120px;
+    padding: 16px;
+    display: none;
+    border: 8px dotted @colorWhite;
+
+    span {
+        margin: 10px;
+        display: block;
+        font-size: 3em;
+        font-weight: bold;
+        color: @colorWhite;
+    }
+}
